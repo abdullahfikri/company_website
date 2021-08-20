@@ -38,17 +38,25 @@ img {
 /* Navbar */
 
 .navbar {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background: #333;
     color: #fff;
     opacity: .8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     width:100%;
     height: 70px;
     position:fixed;
     top: 0;
     padding: 0 30px;
+    -webkit-transition: .5s;
     transition: .5s;
 }
 
@@ -73,6 +81,8 @@ img {
 }
 
 .navbar ul {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
 }
 
@@ -90,10 +100,19 @@ img {
 }
 
 .hero .content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     height: 100%;
     padding: 0 20px;
@@ -108,7 +127,7 @@ img {
     margin: 20px 0 30px;
 }
 
-.hero::before {
+.hero:before {
     content: "";
     position: absolute;
     top: 0;
@@ -139,6 +158,7 @@ img {
 .icons i {
     background-color: #28a745;
     color: #fff;
+    padding: 16px;
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 15px;
@@ -147,6 +167,7 @@ img {
 /* cases */
 .cases img:hover {
     opacity: .7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 
 /* blog */
@@ -214,10 +235,19 @@ img {
 /* footer */
 
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     height:200px;
 }
@@ -236,7 +266,10 @@ footer a i:hover {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction:column;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
         height: 100px;
         padding: 10px  15px;
     }
@@ -247,10 +280,15 @@ footer a i:hover {
     }
 
     .flex-items {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .flex-column .column, .flex-grid .column {
-        flex:100%;
+        -webkit-box-flex:100%;
+            -ms-flex:100%;
+                flex:100%;
         max-width: 100%;
     }
 
@@ -263,7 +301,9 @@ footer a i:hover {
     }
 
     .hero .content {
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
         padding-bottom: 25px;
     }
     .hero .content h1 {
